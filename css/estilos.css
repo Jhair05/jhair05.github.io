@@ -503,6 +503,7 @@ footer .grupo2 small {
 
     header .textos .nombreEmpresa {
         font-size: 30px;
+        filter: drop-shadow( 3px 3px 1px rgba(0, 0, 0, .8));
     }
 
     header .textos h3 {
