@@ -1,4 +1,6 @@
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -61,6 +63,8 @@ header .textos .nombreEmpresa {
     font-size: 80px;
     font-weight: 600;
     color: #fff;
+    -webkit-filter: drop-shadow( 5px 5px 1px rgba(0, 0, 0, .8));
+    -moz-filter: drop-shadow( 5px 5px 1px rgba(0, 0, 0, .8));
     filter: drop-shadow( 5px 5px 1px rgba(0, 0, 0, .8));
     /*margin-bottom: 20px;*/
 }
@@ -94,6 +98,8 @@ header .textos h3 {
     left: 0;
     top: -50px;
     z-index: 0;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
 }
 
@@ -112,6 +118,8 @@ header .textos h3 {
     top: 600px;
     z-index: 1;
     float: right;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
 }
 
@@ -161,6 +169,7 @@ header .textos h3 {
     width: 74%;
 }
 
+.main .menuComida .contenedor-menu,
 .main .menuComida .contenedor-menu-salsas {
     border: 1px solid #000;
     /*backdrop-filter: blur(5px);*/
@@ -170,33 +179,16 @@ header .textos h3 {
     background: url('../img/ice.jpg');
 }
 
-
+.main .menuComida .contenedor-menu2,
 .main .menuComida .contenedor-menu2-extra {
     border: 1px solid #000;
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     padding: 10px;
     overflow: hidden;
     margin: 20px 0;
 }
-
-.main .menuComida .contenedor-menu {
-    border: 1px solid #000;
-    /*backdrop-filter: blur(5px);*/
-    padding: 10px;
-    overflow: hidden;
-    margin: 20px 0;
-    background: url('../img/ice.jpg');
-}
-
-
-.main .menuComida .contenedor-menu2 {
-    border: 1px solid #000;
-    backdrop-filter: blur(5px);
-    padding: 10px;
-    overflow: hidden;
-    margin: 20px 0;
-}
-
 
 .main .menuComida article {
     width: 100%;
@@ -527,13 +519,13 @@ footer .grupo2 small {
         width: 100%;
     }
 
+    .main .menuComida .contenedor-menu {
+        width: 100%;
+    }
+
     .main .menuComida .contenedor-menu2,
     .main .menuComida .contenedor-menu2-extra {
         backdrop-filter: blur(5px);
-    }
-
-    .main .menuComida .contenedor-menu {
-        width: 100%;
     }
 
     .main .menuComida .contenedor-menu-salsas {
