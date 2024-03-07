@@ -1,5 +1,4 @@
-$(document).ready(function() {
-
+$(document).ready(function(){
     //Efecto menú
     $('.menu a').each(function(index, elemento){
         $(this).css({
@@ -68,7 +67,7 @@ $(document).ready(function() {
         e.preventDefault();
         var galeriaScroll;
         if ($(window).width() > 800) {
-            galeriaScroll = galeria;
+            galeriaScroll = galeria - 70;
         } else if ($(window).width() <= 800 && $(window).width() > 500) {
             galeriaScroll = galeria;
         } else if ($(window).width() <= 500) {
