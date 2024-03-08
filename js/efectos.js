@@ -9,6 +9,22 @@ $(document).ready(function(){
             top: '0'
         }, 1500 + (index * 500));//El index sirve para darle un tiempo entre cada elemento(el index empieza en 0 y luego lo multiplica por 500, después el index sigue con el siguiente elemento que sería 1 y lo multiplica por 500 y así se va sucesivamente)
     });
+    
+    // Retraso para mostrar el fondo del menú con animación
+
+    if($(window).width() < 800) {
+        $('#menu').css({
+            'background-color': 'rgba(10, 20, 29, 0)',
+            'top': '-200px',
+            'transition': 'background-color 3s ease'
+        }).delay(1500 + ($('.menu a').length * 500)).queue(function() {
+            $(this).css({
+                'background-color': 'rgba(10, 20, 29, .3)',
+                'top': '0'
+            }).dequeue();
+        });
+    }
+
 
     //Efecto header
     if($(window).width() > 800 ){
