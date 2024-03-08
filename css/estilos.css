@@ -551,7 +551,14 @@ footer .grupo2 small {
 
     .main .mapa {
         width: 80%;
+        padding: 20px;
         margin: auto;
+    }
+
+    .main .mapa iframe {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
     }
 
     footer {
@@ -609,12 +616,14 @@ footer .grupo2 small {
 
     .main .mapa {
         width: 80%;
+        padding: 20px;
         margin: auto;
     }
 
-    .main .mapa {
-        height: 400px;
-        margin-bottom: 3px;
+    .main .mapa iframe {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
     }
 }
 
@@ -670,8 +679,15 @@ footer .grupo2 small {
     }
 
     .main .mapa {
-        height: 400px;
-        margin-bottom: 3px;
+        width: 80%;
+        padding: 20px;
+        margin: auto;
+    }
+
+    .main .mapa iframe {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
     }
 }
 
@@ -722,7 +738,14 @@ footer .grupo2 small {
     }
 
     .main .mapa {
-        height: 400px;
-        margin-bottom: 3px;
+        width: 80%;
+        padding: 20px;
+        margin: auto;
+    }
+
+    .main .mapa iframe {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
     }
 }
