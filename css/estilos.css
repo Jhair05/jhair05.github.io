@@ -35,6 +35,10 @@ header .contenedor {
 header .menu {
     width: 100%;
     text-align: right;
+    border-radius: 10px;
+    /*background: rgba(10, 20, 29, .5);*/
+    margin-top: 10px;
+    /*backdrop-filter: blur(10px);*/
 }
 
 header .menu a {
@@ -60,7 +64,7 @@ header .textos {
 }
 
 header .textos .nombreEmpresa {
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 600;
     color: #fff;
     -webkit-filter: drop-shadow( 5px 5px 1px rgba(0, 0, 0, .8));
@@ -482,24 +486,28 @@ footer .grupo2 small {
 
     header .textos {
         position: relative;
-        margin: 100px 0;
+        margin: 80px 0 160px 0;
     }
 
     header .menu {
+        margin: 30px auto;
         text-align: center;
+        width: 90%;
     }
 
     header .menu a {
-        margin: 30px 20px;
+        margin: 20px 20px;
+        font-size: 22px;
     }
 
     header .textos .nombreEmpresa {
-        font-size: 30px;
+        margin-top: 10px;
+        font-size: 60px;
         filter: drop-shadow( 3px 3px 1px rgba(0, 0, 0, .8));
     }
 
     header .textos h3 {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .main .acercaDe .foto {
@@ -585,13 +593,28 @@ footer .grupo2 small {
 @media screen and (max-width: 500px) {
 
     header .menu {
-        margin-bottom: -80px;
+        margin-bottom: 80px;
     }
 
     header .menu a {
         color: #fff;
-        font-size: 16px;
-        margin: 40px 20px;
+        font-size: 14px;
+    }
+
+    header .textos .nombreEmpresa {
+        margin-top: 10px;
+        font-size: 30px;
+        filter: drop-shadow( 3px 3px 1px rgba(0, 0, 0, .8));
+    }
+
+    
+    header .textos h3 {
+        font-size: 20px;
+    }
+
+    header .textos {
+        position: relative;
+        margin: 60px 0 140px 0;
     }
 
     .main .acercaDe article h3 {
@@ -631,14 +654,20 @@ footer .grupo2 small {
 @media screen and (max-width: 451px) {
 
     header .menu {
-        margin-bottom: -80px;
+        margin-bottom: 80px;
         text-align: center;
+        width: 100%;
     }
 
     header .menu a {
         color: #fff;
-        font-size: 14px;
-        margin: 40px 10px;
+        font-size: 16px;
+        margin: 10px 10px;
+    }
+
+    header .textos {
+        position: relative;
+        margin: 60px 0 140px 0;
     }
 
     .main .acercaDe article h3 {
@@ -694,14 +723,15 @@ footer .grupo2 small {
 @media screen and (max-width: 331px) {
 
     header .menu {
-        margin-bottom: -80px;
+        margin-bottom: 80px;
         text-align: center;
+        width: 100%;
     }
 
     header .menu a {
         color: #fff;
-        font-size: 14px;
-        margin: 40px 5px;
+        font-size: 12px;
+        margin: 10px 10px;
     }
 
     .main .acercaDe article h3 {
