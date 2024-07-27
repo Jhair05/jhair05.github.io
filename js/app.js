@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function enviarWhats() {
         const telefono = '522294913849'; // Número de teléfono con el código de país
-        const mensaje = 'Hola hermoso, necesito de tu ayuda';
+        const mensaje = 'Hola Jhair';
         const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
         window.open(url, '_blank'); // Abre en una nueva pestaña
     }
