@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open sans', sans-serif, Arial;
+    font-size: 14px;
+    background: #000211;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: left;
+}
+
+.contenedor-header {
+    width: 100%;
+    background-color: #12152c;
+    padding: 25px;
+    position: fixed;
+    z-index: 1;
+}
+
+.jhairDev {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.name {
+    color: #18afdd;
+}
+
+.dev {
+    color: #185ddd;
+}
+
+.presentacion {
+    margin-top: 130px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: start;
+    width: 40%;
+}
+
+.foto img {
+    border-radius: 50%;
+    vertical-align: top;
+    border: 5px solid #18afdd;
+    margin-right: 20px;
+    padding: 2px;
+}
+
+.InfoPersonal {
+    display: block;
+}
+
+.contenedor-texto {
+    color: #fff;
+    line-height: 10px;
+}
+
+.contenedor-texto h1{
+    font-weight: 300;
+}
+
+.contenedor-texto p {
+    color: #18afdd;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.redes a {
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    font-size: 25px;
+    display: block;
+    border-radius: 5px;
+}
+
+.redes .facebook:hover {
+    color: #1877f2;
+}
+
+.redes .instagram:hover {
+    color: #e1306c;
+}
+
+.redes .github:hover {
+    color: #666666;
+}
+
+
+/* ------------- Sobre mí ------------ */
+
+.sobreMi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    max-width: 40%;
+}
+
+.texto p {
+    margin-top: 30px;
+    text-align: justify;
+    color: #fff;
+    line-height: 22px;
+}
+
+
+/* ----------- Trabajos ---------- */
+
+.contenedor-t {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.tituloTrabajo {
+    font-size: 34px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.contenedor-trabajos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.trabajo {
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 0;
+}
+
+.animacion {
+    margin-bottom: 10px;
+    transition: .3s ease;
+}
+
+.contenedor-trabajos .trabajo .imagen img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+    box-shadow: 7px 7px 5px rgba(79, 80, 83, 0.5);
+}
+
+.contenedor-trabajos .trabajo .imagen:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.contenedor-trabajos .trabajo .descripcion {
+    text-align: center;
+}
+.contenedor-trabajos .trabajo .descripcion .nombre {
+    color: #3895ea;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contenedor-trabajos .trabajo .descripcion .categoria {
+    color: #636363;
+    font-size: 14px;
+}
+
+/* ------------ --------- Contacto --------------- --------- */
+
+.contacto {
+    width: 40%;
+}
+
+.email {
+    margin: auto 10px;
+}
+
+.box-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: #12152c;
+    border-radius: 20px;
+    padding: auto 10px;
+    border: 2px solid #134381;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.box-contacto img {
+    width: 40px;
+}
+
+.button{
+    background: none;
+    text-decoration: none;
+    border: none;
+}
+
+button p {
+    color: #636363;
+}
+
+.box-contacto:hover {
+    background: #134381;
+    cursor: pointer;
+}
+
+button:hover p, h3 {
+    color: white;
+    cursor: pointer;
+}
+
+.tituloEmail {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    color: #fff;
+    margin-bottom: -10px;
+}
+
+/* ------------------ ------------------- Footer ----------- ---------- */
+
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+
+/* ------------------- ---------- Medias queries ----------- --------- */
+
+@media screen and (max-width: 850px) {
+   
+    .presentacion {
+        width: 50%;
+    }
+
+    .texto {
+        max-width: 50%;
+    }
+
+    .contenedor-t {
+        width: 50%;
+    }
+
+    .contenedor-trabajos .trabajo .imagen img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contacto {
+        width: 50%;
+    }
+
+    .box-contacto img {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .contenedor-texto h1{
+        font-size: 20px;
+    }
+    
+    .contenedor-texto p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .redes a {
+        font-size: 25px;
+    }
+   
+    .presentacion {
+        width: 80%;
+    }
+
+    .texto {
+        max-width: 80%;
+    }
+
+    .contenedor-t {
+        width: 80%;
+    }
+
+    .contenedor-trabajos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .trabajo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-trabajos .trabajo .imagen img {
+        width: 230px;
+        height: 230px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-trabajos .trabajo .descripcion {
+        text-align: justify;
+    }
+    .contenedor-trabajos .trabajo .descripcion .nombre {
+        color: #3895ea;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .contenedor-trabajos .trabajo .descripcion .categoria {
+        color: #636363;
+    }
+
+    .contacto {
+        width: 80%;
+    }
+    
+    .email {
+        margin: auto 10px;
+    }
+    
+    .box-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        background: #12152c;
+        border-radius: 20px;
+        padding: auto 10px;
+        border: 2px solid #134381;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .box-contacto img {
+        width: 35px;
+    }
+
+    .tituloEmail {
+        font-size: 14px;
+    }
+}
