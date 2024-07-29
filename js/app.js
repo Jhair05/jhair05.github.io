@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function linkQuiosco() {
-        const url = 'https://quiosco-la-heladera.vercel.app/order/bebidas';
+        const url = 'https://quiosco-la-heladera.vercel.app/order/helados';
         window.open(url, '_blank');
     }
 
