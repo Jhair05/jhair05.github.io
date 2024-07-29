@@ -3,10 +3,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const email = document.querySelector('#email');
     const whats = document.querySelector('#whatsapp');
     const quiosco = document.querySelector('#quiosco');
+    const menu = document.querySelector('#menu');
 
     email.addEventListener('click', enviarEmail);
     whats.addEventListener('click', enviarWhats);
     quiosco.addEventListener('click', linkQuiosco);
+    menu.addEventListener('click', linkMenu);
 
 
     function enviarEmail() {
@@ -22,6 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function linkQuiosco() {
         const url = 'https://quiosco-la-heladera.vercel.app/order/bebidas';
+        window.open(url, '_blank');
+    }
+
+    function linkMenu() {
+        const url = 'https://menu-la-heladera.netlify.app/';
         window.open(url, '_blank');
     }
 
