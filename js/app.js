@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function enviarEmail() {
-        window.location.href = 'mailto:jhair_vkgarcia@outlook.com';
+        window.location.href = 'mailto:jhairdev05@gmail.com';
     }
 
     function enviarWhats() {
